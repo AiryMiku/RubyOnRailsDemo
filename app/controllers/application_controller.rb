@@ -1,6 +1,10 @@
 class ApplicationController < ActionController::Base
 
   def hello
-    render html: "hello airy"
+    render json: {
+        data: {
+            msg: 'hello airy'
+        }
+    }
   end
 end
